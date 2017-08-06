@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 2.8.3)
 project(kobuki_gazebo_plugins)
-
+set(CMAKE_CXX_FLAGS "-std=c++0x ${CMAKE_CXX_FLAGS}")
 find_package(gazebo REQUIRED)
 
 find_package(catkin REQUIRED COMPONENTS gazebo_ros
